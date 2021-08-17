@@ -16,3 +16,13 @@ The key points we had to go over and implement in our little code:
 - generics
 - SRP and DRY principle
 - Composition over inheritance
+
+## 002 - WebAPI
+The key points on WebAPI lesson today were to research and implement:
+- the HttpResponseMessage return type
+- different HTTP status codes
+- HTTP protocol (header, body)
+- JSON
+- CRUD methods
+- Postman sending requests
+- DataAnnotations ([FromBody],[HttpPost] etc.)
