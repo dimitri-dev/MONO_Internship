@@ -22,8 +22,8 @@ namespace _003___Baze_podataka.Repositories
             ret.Registration = dto.Registration;
             ret.StudentID = dto.StudentId;
 
-            SqlCommand sql = CreateSqlCommand("INSERT INTO Car VALUES(@Id, @Registration, @StudentId)",
-                                             ("@Id", ret.Id), ("@Registration", ret.Registration), ("@StudentId", ret.StudentID));
+            SqlCommand sql = CreateSqlCommand("INSERT INTO Car VALUES(@Id, @StudentId, @Registration)",
+                                             ("@Id", ret.Id), ("@StudentId", ret.StudentID), ("@Registration", ret.Registration));
 
             _connection.Open();
             sql.ExecuteNonQuery();
@@ -80,7 +80,7 @@ namespace _003___Baze_podataka.Repositories
             if (dto.StudentId != null) ret.StudentID = (Guid)dto.StudentId;
 
             var sql = CreateSqlCommand("UPDATE Car SET Registration = @Registration, StudentId = @StudentId WHERE Id = @Id",
-                                      ("@Id", id), ("@Name", ret.Registration), ("@StudentId", ret.StudentID));
+                                      ("@Id", id), ("@Registration", ret.Registration), ("@StudentId", ret.StudentID));
 
             _connection.Open();
             sql.ExecuteNonQuery();
@@ -124,14 +124,8 @@ namespace _003___Baze_podataka.Repositories
             Car item = new Car();
 
             item.Id = reader.GetGuid(0);
-            item.Registration = reader.GetString(1);
-            item.StudentID = reader.GetGuid(2);
-            
-            item.Student = new Models.Student.Student();
-            item.Student.Id = reader.GetGuid(3);
-            item.Student.Name = reader.GetString(4);
-            item.Student.Surname = reader.GetString(5);
-            item.Student.Gender = reader.GetString(6);
+            item.StudentID = reader.GetGuid(1);
+            item.Registration = reader.GetString(2);
 
             return item;
         }
