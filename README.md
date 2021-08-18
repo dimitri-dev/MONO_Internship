@@ -26,3 +26,11 @@ The key points on WebAPI lesson today were to research and implement:
 - CRUD methods
 - Postman sending requests
 - DataAnnotations ([FromBody],[HttpPost] etc.)
+
+## 003 - Databases
+Topics for the database learning day were:
+- Ado.Net
+- Database relations
+- Primary and Foreign keys
+- Indexing
+- Linq (research)
