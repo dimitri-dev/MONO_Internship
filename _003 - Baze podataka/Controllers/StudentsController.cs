@@ -35,7 +35,7 @@ namespace _003___Baze_podataka.Controllers
         {
             Student item = _privateRepository.Get(id);
 
-            if (item == null) throw new HttpResponseException(HttpStatusCode.NotFound);
+            if (item == null) return NotFound();
 
             return Ok(item);
         }
@@ -47,7 +47,7 @@ namespace _003___Baze_podataka.Controllers
 
             Student item = _privateRepository.Update(id, dto);
 
-            if (item == null) throw new HttpResponseException(HttpStatusCode.NotFound);
+            if (item == null) return NotFound();
 
             return Ok(item);
         }
@@ -62,7 +62,7 @@ namespace _003___Baze_podataka.Controllers
             }
             catch
             {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                return NotFound();
             }
         }
     }

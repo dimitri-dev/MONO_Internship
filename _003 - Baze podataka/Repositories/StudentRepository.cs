@@ -38,10 +38,9 @@ namespace _003___Baze_podataka.Repositories
 
             SqlCommand sql = CreateSqlCommand("SELECT * FROM Student Where Id = @Id",
                                              ("@Id", id));
-
-            SqlDataReader sqlReader = sql.ExecuteReader();
             
             _connection.Open();
+            SqlDataReader sqlReader = sql.ExecuteReader();
             if (sqlReader.HasRows)
             {
                 sqlReader.Read();
