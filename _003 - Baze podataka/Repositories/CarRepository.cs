@@ -11,6 +11,7 @@ namespace _003___Baze_podataka.Repositories
     public class CarRepository : ICarRepository
     {
         private static SqlConnection _connection = new SqlConnection(ConfigurationManager.ConnectionStrings["monoDB"].ConnectionString);
+        private static IStudentRepository _privateRepository = new StudentRepository();
 
         #region CRUD
         public Car Create(CreateCarDto dto)
@@ -29,13 +30,16 @@ namespace _003___Baze_podataka.Repositories
             sql.ExecuteNonQuery();
             _connection.Close();
 
+            ret.Student = _privateRepository.Get(ret.StudentID);
+
             return ret;
         }
+
         public Car Get(Guid id)
         {
             Car ret = null;
 
-            SqlCommand sql = CreateSqlCommand("SELECT * FROM Car Where Id = @Id",
+            SqlCommand sql = CreateSqlCommand("SELECT * FROM Car A LEFT JOIN Student B ON A.StudentId = B.Id Where A.Id = @Id",
                                              ("@Id", id));
 
             _connection.Open();
@@ -126,6 +130,8 @@ namespace _003___Baze_podataka.Repositories
             item.Id = reader.GetGuid(0);
             item.StudentID = reader.GetGuid(1);
             item.Registration = reader.GetString(2);
+
+            item.Student = _privateRepository.Get(item.StudentID);
 
             return item;
         }
