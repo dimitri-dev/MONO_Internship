@@ -39,3 +39,7 @@ Topics for the database learning day were:
 Today's research topics were:
 - multilayer architecture
 - rest and domain models (investigate differences)
+
+## 005 - Asynchornous programming
+- asynchornous programming research 
+- asynchronous implementation to the multilayer architecture project
