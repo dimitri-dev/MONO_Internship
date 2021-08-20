@@ -34,3 +34,8 @@ Topics for the database learning day were:
 - Primary and Foreign keys
 - Indexing
 - Linq (research)
+
+## 004 - Multilayer architecture
+Today's research topics were:
+- multilayer architecture
+- rest and domain models (investigate differences)
