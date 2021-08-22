@@ -4,10 +4,9 @@ Personal development repository for my student internship in Mono Software.
 # Details about each day of practice
 
 ## 001 - Introduction to OOP
-The key points we had to go over and implement in our little code:
-- inheritance,
-- polymorphism,
-- encapsulation,
+- inheritance
+- polymorphism
+- encapsulation
 - abstract class
 - interface
 - data types (value and reference types)
@@ -18,7 +17,6 @@ The key points we had to go over and implement in our little code:
 - Composition over inheritance
 
 ## 002 - WebAPI
-The key points on WebAPI lesson today were to research and implement:
 - the HttpResponseMessage return type
 - different HTTP status codes
 - HTTP protocol (header, body)
@@ -28,7 +26,6 @@ The key points on WebAPI lesson today were to research and implement:
 - DataAnnotations ([FromBody],[HttpPost] etc.)
 
 ## 003 - Databases
-Topics for the database learning day were:
 - Ado.Net
 - Database relations
 - Primary and Foreign keys
@@ -36,10 +33,11 @@ Topics for the database learning day were:
 - Linq (research)
 
 ## 004 - Multilayer architecture
-Today's research topics were:
 - multilayer architecture
 - rest and domain models (investigate differences)
 
 ## 005 - Asynchornous programming
 - asynchornous programming research 
 - asynchronous implementation to the multilayer architecture project
+
+## 006 - Dependency Injection
