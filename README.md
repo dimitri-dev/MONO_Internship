@@ -40,4 +40,12 @@ Personal development repository for my student internship in Mono Software.
 - asynchornous programming research 
 - asynchronous implementation to the multilayer architecture project
 
-## 006 - Dependency Injection
+## 006 & 007 - Dependency Injection
+- SOLID principle
+- IoC design pattern
+- Dependency Injection
+- Dependency Injection scopes
+- Autofac
+- Flexible module system
+- DI with Multi-layered architecture
+- DI in Practice
