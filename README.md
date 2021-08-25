@@ -49,3 +49,10 @@ Personal development repository for my student internship in Mono Software.
 - Flexible module system
 - DI with Multi-layered architecture
 - DI in Practice
+
+## 008 - DI with AutoMapper
+- Filtering
+- Numeration
+- Queries
+- AutoMapper
+- REST models
