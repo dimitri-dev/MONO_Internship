@@ -38,16 +38,5 @@ namespace TheBooks.Models
             get => _gender;
             set => _gender = value;
         }
-
-        // Needed for Serialization
-        public Student() { }
-
-        public Student(string firstName, string lastName, string gender)
-        {
-            _name = firstName;
-            _surname = lastName;
-            _gender = gender;
-            _id = Guid.NewGuid();
-        }
     }
 }

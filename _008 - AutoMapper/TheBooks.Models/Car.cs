@@ -38,14 +38,5 @@ namespace TheBooks.Models
             get => _student;
             set => _student = value;
         }
-
-        // Needed for Serialization
-        public Car() { }
-
-        public Car(string registration)
-        {
-            _registration = registration;
-            _id = Guid.NewGuid();
-        }
     }
 }
