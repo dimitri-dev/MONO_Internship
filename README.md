@@ -56,3 +56,11 @@ Personal development repository for my student internship in Mono Software.
 - Queries
 - AutoMapper
 - REST models
+
+## 009 - Backend Group Project
+Creating a WebAPI project with in a 4-people group that utilizes
+- Multilayered Architecture,
+- Asynchornous Programming,
+- Dependency Injection,
+- Mapper,
+- Generics
