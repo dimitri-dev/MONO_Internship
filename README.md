@@ -3,6 +3,8 @@ Personal development repository for my student internship in Mono Software.
 
 # Details about each day of practice
 
+# Backend
+
 ## 001 - Introduction to OOP
 - inheritance
 - polymorphism
@@ -57,10 +59,22 @@ Personal development repository for my student internship in Mono Software.
 - AutoMapper
 - REST models
 
-## 009 - Backend Group Project
+## FINAL - Backend Group Project
+### The backend API took 8 days of work to create and is currently situated in a private repository.
 Creating a WebAPI project with in a 4-people group that utilizes
 - Multilayered Architecture,
 - Asynchornous Programming,
 - Dependency Injection,
 - Mapper,
 - Generics
+- GitHub features (Issues, Pull Requests, Merge Requests etc..)
+
+# Frontend
+
+## 101 - Introduction to React
+- Using NPM
+- Creating a React project
+- Creating React components
+- Class Components
+- Function Components
+- React Bootstraps
